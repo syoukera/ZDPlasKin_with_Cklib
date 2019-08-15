@@ -4,4 +4,9 @@
 ### 元ファイル
 `example1` from ZDPlasKin Web page
 
-# ZDPlasKin_with_Cklib
+### 実行方法 (Linux)
+```
+$ export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
+$ gfortran dvode_f90_m.F90 zdplaskin_m.F90 driver.F90 bolsig_x86_64.so
+$ ./a.out
+```
